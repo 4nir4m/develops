@@ -1,0 +1,73 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'NewFont', monospace;
+    src: local('NewFont'), url(Fonts/NeueHaasDisplayRoman.ttf);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24.8668px;
+    line-height: 28px;
+}
+
+#hero {
+    max-width: 1228px;
+    display: flex;
+    height: 682px;
+    margin: 0, auto;
+
+}
+
+p {
+    position: relative;
+    left: 90px;
+    z-index: 1;
+    font-size: 50px;
+    line-height: 100%;
+    width: 773px;
+    height: 600px;
+
+
+}
+
+img {
+    position: relative;
+    left: -140px;
+    height: 606px;
+    width: 564px;
+}
+
+.container {
+    max-width: 1228px;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0, auto;
+
+}
+
+svg {
+    position: absolute;
+    left: 3.4%;
+    right: 91.81%;
+    top: 3.64%;
+    bottom: 32.73%;
+}
+
+.aligncenter {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav li:hover {
+    background: #c3bfbf;
+    border-radius: 10px;
+}
+
+nav li:focus {
+    text-decoration: line-through;
+    color: black;
+}
+
+li {
+    padding: 27px;
+}
