@@ -1,0 +1,66 @@
+body {
+    font-family: 'Playfair Display', serif;
+    src: local('Playfair Display'), url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap);
+}
+
+.logo{
+    max-width: 81.28px;
+    max-height: 269.77px;
+}
+.logo2{
+    max-width: 60.23px;
+    max-height: 197.39px;
+}
+
+.aligncenter {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;    
+}
+
+.links{
+    display: flex;
+    list-style: none;
+    justify-content: space-between; 
+}
+
+li{
+    padding: 27px;
+}
+
+.elements{
+    display: flex;
+    align-content: center;
+}
+
+#hero {
+    display: flex;   
+    margin: 0, auto;
+}
+
+p {
+    position: relative;    
+    z-index: 1;
+}
+
+
+
+.container {
+    
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0, auto;
+
+}
+
+nav li:hover {
+    background: #c3bfbf;
+    border-radius: 10px;
+}
+
+nav li:focus {
+    text-decoration: line-through;
+    color: black;
+}
+
