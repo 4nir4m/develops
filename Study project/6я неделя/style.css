@@ -11,12 +11,20 @@ a {
     text-decoration: none;
 }
 
+.menu_items {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 .menu_items::after {
+    position: absolute;
     content: '';
     width: 110px;
     background: #4BA87D;
     bottom: -5px;
     height: 5px;
+
 }
 
 .container {
@@ -162,12 +170,6 @@ h2 span.spacer {
     height: 26px;
 }
 
-.links {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
-
 nav li:hover {
     background: #c3bfbf;
 
@@ -220,4 +222,10 @@ nav li:focus {
     color: white;
     z-index: 1;
     width: 655px;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
 }
