@@ -123,24 +123,6 @@ nav a {
 }
 
 
-.button_white_2 {
-    color: #4BA87D;
-    font-weight: 900;
-    font-size: 21px;
-    line-height: 25px;
-    letter-spacing: 1px;
-    padding: 17px 25px;
-    background: #FFFFFF;
-}
-
-.text {
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 80px;
-}
-
 main .container {
     max-width: 1088px;
     margin: 250px auto;
@@ -165,6 +147,7 @@ h2 span {
     font-size: 59px;
     font-style: bold;
     height: 142px;
+    z-index: 1;
 
 }
 
@@ -193,4 +176,48 @@ nav li:hover {
 nav li:focus {
     text-decoration: line-through;
     color: black;
+}
+
+.section_2 {
+    position: relative;
+    width: 100%;
+    max-width: 944px;
+    background-color: #050505;
+    background: url('./floating_elements.svg') center no-repeat;
+
+}
+
+.section_2 img {
+    width: 100%;
+    height: auto;
+}
+
+.button_white_2,
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button_white_2 {
+    color: #4BA87D;
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    padding: 17px 25px;
+    background: #FFFFFF;
+}
+
+.text {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 80px;
+    color: white;
+    z-index: 1;
+    width: 655px;
 }
