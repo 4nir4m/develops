@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>verstka</title>    
+    <meta name="viewport" content="width=device-width; initial-scale=1.0"> 
+    <style>
+        header {
+    background-color: #f13535;
+    grid-area: header;
+}
+.main {
+    background-color: #fdecbc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: main;
+}
+aside {
+    background-color: #cdf39b;
+    grid-area: aside;
+}
+footer {
+    background-color: #cd39fa;
+    grid-area: footer;
+}
+.section {
+    background-color: #d6f0a7;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.container {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 1fr 3fr 2fr;
+        grid-template-areas:
+            'header header'
+            'main aside'
+            'footer footer';
+}
+    </style>  
+</head>
+
+<div class="container">
+    <header>
+        <div> Шапка страницы </div>
+    </header>
+
+    <body>
+        <div class="main"> Основная часть
+            <div style="display: flex; justify-content: space-between;">
+                <span id="part"> Ещё 1 </span>
+                <span id="part"> Ещё 2 </span>
+            </div>
+            <div><span id="part"> Ещё 3 </span></div> 
+        </div>
+        <aside>Боковая область</aside>    
+    </body>
+
+    <footer>
+        <ul class="section">
+            <li>Секция футера 1</li>
+            <li>Секция футера 2</li>
+            <li>Секция футера 3</li>
+            <li>Секция футера 4</li>
+        </ul>    
+    </footer>
+</div>
