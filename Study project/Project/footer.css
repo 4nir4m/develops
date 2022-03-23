@@ -1,0 +1,15 @@
+.container {
+    width: 1111px;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+nav {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
