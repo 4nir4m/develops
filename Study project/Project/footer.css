@@ -1,15 +1,143 @@
-.container {
-    width: 1111px;
+@font-face {
+    font-family: 'PT Root UI_Regular';
+    src: local('PT Root UI_Regular'),
+        url(проект\PTRootUI_Regular.otf);
+}
+
+@font-face {
+    font-family: 'PT Root UI_Bold';
+    src: local('PT Root UI_Bold'),
+        url(проект\PTRootUI_Bold.otf);
+}
+
+
+footer {
+    max-height: 175px;
+    max-width: 1301px;
+    margin: 0px auto;
+    font-family: 'PT Root UI_Regular';
 }
 
 a {
     text-decoration: none;
-    list-style: none;
-    color: black;
+    color: #373737
 }
 
-nav {
+ul {
+    margin: 0px;
+    padding: 0px;
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: #373737;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.navigation__list .doormatnav__list .info__body {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'PT Root UI_Regular';
+}
+
+.contacts__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.body-social {
+    display: flex;
+    flex-direction: row;
+}
+
+.info__button-button {
+    background-color: #373737;
+    height: 48px;
+    width: 212px;
+    margin-left: 30px;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'PT Root UI_Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.info__button-button:hover {
+    background-color: #504f4f;
+}
+
+.info__mail {
+    width: 333px;
+    height: 48px;
+    padding: auto 20px;
+    border: 2px solid #373737;
+    box-sizing: border-box;
+    font-family: 'PT Root UI_Regular';
+}
+
+.cards i {
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 9px;
+}
+
+.info__pay {
+    display: flex;
+    flex-direction: row;
+}
+
+.info__pay-con {
+    margin-right: 63px;
+    color: #373737;
+    font-size: 15px;
+    text-align: center;
+}
+
+.navigation__body ul li {
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-family: 'PT Root UI_Regular';
+}
+
+.doormatnav__body ul li {
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-family: 'PT Root UI_Regular';
+}
+
+.contacts__body-number {
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'PT Root UI_Regular';
+}
+
+.contacts__body-email {
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'PT Root UI_Regular';
+}
+
+.info__pay {
+    padding-top: 64px;
+}
+
+/* .info__pay-con {
+    padding-top: 5px;
+} */
+
+.info__body-new {
+    margin: 0px 0px 16px;
+    font-weight: 700;
 }
