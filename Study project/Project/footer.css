@@ -10,11 +10,10 @@
         url(проект\PTRootUI_Bold.otf);
 }
 
-
 footer {
     max-height: 175px;
     max-width: 1301px;
-    margin: 0px auto;
+    margin: 30px auto;
     font-family: 'PT Root UI_Regular';
 }
 
@@ -133,11 +132,89 @@ ul {
     padding-top: 64px;
 }
 
-/* .info__pay-con {
-    padding-top: 5px;
-} */
 
 .info__body-new {
     margin: 0px 0px 16px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 765px) {
+
+    .navigation__body,
+    .doormatnav__body,
+    .info__pay-con {
+        display: none;
+    }
+
+    .info__button-button {
+        background-color: #373737;
+        height: 48px;
+        width: 345px;
+        margin: 0px 0px;
+    }
+
+    .info__mail {
+        width: 345px;
+        height: 48px;
+    }
+
+    .info__body-new {
+        font-size: 14px;
+        display: grid;
+        grid-area: new;
+    }
+
+    .wtf1 {
+        display: grid;
+        grid-area: mail;
+        align-items: center;
+    }
+
+    .wtf2 {
+        margin: 10px 0px;
+        display: grid;
+        align-items: center;
+        grid-area: button;
+    }
+
+    .contacts__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .body__contacts {
+        display: grid;
+        grid-area: contacts;
+        align-items: center;
+    }
+
+    .info__pay .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .info__pay {
+        display: grid;
+        grid-area: pay;
+        align-items: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 20px 70px 70px 50px 40px;
+        grid-template-areas: 'new'
+            'mail'
+            'button'
+            'contacts'
+            'pay';
+    }
+
+    footer {
+        width: 375px;
+        height: 350px;
+    }
+
 }
