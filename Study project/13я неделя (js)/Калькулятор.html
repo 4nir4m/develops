@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Калькулятор</title>
+    </head>
+    <body>
+        <div class="operator_btn">
+            <button onClick="showPlus()">+</button>
+            <button onClick="showMinus()">-</button>
+            <button onClick="showTimes()">х</button>
+            <button onClick="showDivide()">/</button>
+        </div>
+
+    <script>
+        function showPlus() {
+            const x = prompt(`Первое число`, ``);
+            const y = prompt(`Второе число`, ``);
+            alert(Number(x) + Number(y));
+        }
+        function showMinus() {
+            const x = prompt(`Первое число`, ``);
+            const y = prompt(`Второе число`, ``);
+            alert(Number(x) - Number(y));
+        }
+        function showTimes() {
+            const x = prompt(`Первое число`, ``);
+            const y = prompt(`Второе число`, ``);
+            alert(Number(x) * Number(y));
+        }
+        function showDivide() {
+            const x = prompt(`Первое число`, ``);
+            const y = prompt(`Второе число`, ``);
+            alert(Number(x) / Number(y));
+        }
+    </script>
+    </body>
+    </html>
