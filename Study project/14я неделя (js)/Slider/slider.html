@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>slider</title>
+        <style>
+            img{
+                width: 295px;
+                height: 287px;
+            }
+            .slider{
+                display: flex;
+                justify-content: center;
+            }
+            button{    
+                height: 30px;
+                position: relative;
+                margin: auto 10px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="slider">
+            <button onclick="changeBack()">&#10092;</button>
+            <img src='img_1.JPG' id='pic1' />
+            <button onclick="changeForward()">&#10093;</button>
+        </div>
+
+<script>
+    function changeForward(){
+        let pic1 = document.getElementById('pic1');
+        pic1.src = 'img_2.JPG';
+    }
+    function changeBack(){
+        let pic1 = document.getElementById('pic1');
+        pic1.src = 'img_1.JPG';
+    }
+
+</script>
+    </body>
