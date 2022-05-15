@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>ChangeColor</title>
+    </head>
+    <body>
+        <div id="div">
+            <span>Выберите из списка:</span>
+            <select id="bg" onchange="changeBGcolor()"> 
+                <option style="background-color:#051aff" value="#051aff">Синий</option> 
+                <option style="background-color:#ffffff" value="#ffffff">Белый</option> 
+                <option style="background-color:#f9ff82" value="#f9ff82">Желтый</option> 
+                <option style="background-color:#f6347b" value="#f6347b">Розовый</option> 
+            </select>
+
+            <h1>Это мой веб-сайт</h1>
+        </div>
+
+<script>
+
+function changeBGcolor() {
+var selectedBGColor = document.getElementById("bg").value;
+document.body.style.backgroundColor = selectedBGColor;
+}
+
+    </script>
+    </body>
+    </html>
