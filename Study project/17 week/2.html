@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+    </head>
+    <body>
+        <input type="text" id="decoder">
+        <button id="sendButton">Отправить</button>
+        <p id="comment"></p>
+    </body>
+    <script>
+        const button = document.querySelector('#sendButton'),
+        input = document.querySelector('#decoder');
+
+        button.addEventListener('click',checkSpam)
+
+
+        function checkSpam(str) {
+            const value = input.value;
+            let m = str.replace(/viagra/gi,"***");
+            let n = str.replace(/XXX/gi,"***");
+
+    comment.innerHTML = str;
+    }
+    </script>

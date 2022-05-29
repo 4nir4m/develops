@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+<script>
+function create() {
+    let min=-10;
+    let max=10;
+    let x = [];
+        for (let i = 0; i < 10; i++) {
+            let j = Math.round(min+Math.random()*(max-min));
+            x[i] = j;
+        }
+        return x;
+    }
+function averageСost(arr) {
+   return arr.reduce((partial_sum, a) => partial_sum + a, 0) / arr.length; 
+}
+
+console.log(averageСost([3, 6, 2, 9]));
+
+// document.body.innerHTML = JSON.stringify(create())
+//или так
+document.write(create())
+
+console.log(Math.min(...create()))
+console.log(Math.max(...create()))
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+    </head>
+    <body>
+<input type="text" id="decoder">
+<button id="sendButton">Отправить</button>
+<p id="nam"></p>
+<br>
+<p id="Surnam"></p>
+<br>
+<p id="SecNam"></p>
+    </body>
+
+    <script>
+const button = document.querySelector('#sendButton'),
+        input = document.querySelector('#decoder');
+
+        button.addEventListener('click',formatText)
+
+    function formatText(){
+        const value = input.value,
+            arr = value.trim().split(' ').map(word =>{
+            let newWord = '';
+            newWord = word[0].toUpperCase() + String(word.toLowerCase()).slice(1);
+            return newWord;
+        })
+
+        nam.innerHTML = arr[0];
+        Surnam.innerHTML = arr[1];
+        SecNam.innerHTML = arr[2];
+    }    
+    </script>
